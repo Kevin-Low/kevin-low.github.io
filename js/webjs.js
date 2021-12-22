@@ -175,9 +175,10 @@ window.addEventListener("load", init);
 
 
 //contact form stuff//
-var sendbtn = document.querySelector('#send');
+function contactform() {
+ var sendbtn = document.querySelector('#send');
 var ele = document.getElementsByTagName('input');
-var ele2 = document.getElementsByClassName('input')
+
 
 $(document).ready(function() {
   sendbtn.disabled = true;
@@ -193,7 +194,8 @@ $(document).ready(function() {
       }
   }
   });
-});
+}); 
+}
 
 
 
