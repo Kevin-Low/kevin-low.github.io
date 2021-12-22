@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js" integrity="sha384-Ou6JaWXoODZwZ/+BKfGDBaXucZhZRzDGo8gtClNnBUrCyPgKfLfHt12Zx7DjKdFn" crossorigin="anonymous"></script>
+    <script defer src="js/webjs.js"></script>
+    <link href="css/webstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/68917759a6.js" integrity="sha384-BApgallKKvXpdSFctcpnLJtzUvf03LQOorg0OWXJvaFSLLuPwFcvV08N8DSmnNxQ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+</head>
+
+<div class="svg-wrap">
+    <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+      <path id="svg_line" d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6" fill="none" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+    </svg>
+</div>
+
+<body>
+    <header>
+        <div class="header-logo">Kevin Low</div>
+        <nav class="link-svgline">
+            <ul>
+                <li><a href="/Welcome.html" data-bold="Home" id="nav-home" onclick="welcomeScribble()">Home<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"><use></svg></a></li>
+                <li><a href="/About.html" data-bold="About" id="nav-about" class="is-active" onclick="aboutScribble()">About<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+                <li><a href="/Works.html" data-bold="Works" id="nav-work" onclick="workScribble()">Works<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+                <li><a href="/Contact.html" data-bold="Contact" id="nav-contact" onclick="contactScribble()">Contact<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="swup" class="transition-swipe">
+        <section class="page1">
+            <div class="About-Head">
+                <h1 class="letter-split" aria-label="About Me">
+                    <span><span class="char1" aria-hidden="true" style="animation-delay: 0.4s;">About</span></span>
+                    <span><span class="char2" aria-hidden="true" style="animation-delay: 0.5s;">Me</span></span> 
+                    <span><span class="char8" aria-hidden="true" style="animation-delay: 1s;">!</span></span>
+                    <span><span class="char9" aria-hidden="true" style="animation-delay: 1.1s;">!</span></span>
+                </h1>
+                <hr>
+            </div>
+            <div class="About-Details">
+                <p>
+                    <br>
+                    <a href="#" class="tinyme">Kevin Low (me)</a> graduated with a Bachelors in Science, Chemistry.
+                    I created this website to document my journey into the Tech Sector as an aspiring Software Engineer.
+                    <br>
+                    <br>
+                    While I may not have much experience or formal education in computer science, 
+                    I hope to counterbalance it with my desire and drive to learn and eventually make up my lack of certified education with relevant work experience.
+                    <br>
+                    <br>
+                    In my freetime i enjoy learning music and playing video games.
+                    Asides from that I also enjoy making omelettes and painting.
+                    <br>
+                    <br>
+                    <hr>
+                </p>
+            </div>
+
+            <div id="itsme" class="itsme">
+                <div class="myface">
+                    <img src="/images/itsme3.png" alt="a photo of me">
+                </div>
+            </div>
+
+        </section>
+        <section class="page2">
+            <div class="Hobbies fade-in">
+                <h2>Hobbies</h2>
+
+                <div id="myBtnContainer">
+                    <div class="btn highlight">
+                        <img src="images/circleyellow.gif">
+                        <a href="#" onclick="filterSelection('eggs')"> eggs</a>
+                    </div>
+                    <div class="btn">
+                        <img src="images/circleyellow.gif">
+                        <a href="#" class="btn" onclick="filterSelection('painting')"> painting</a>
+                    </div>
+                    
+                </div>
+
+                <div id="wrapper">
+                    <div class="eggs gallery-wrap show">
+                        <div class="gallery-description">
+                            <hr>
+                            <h3> COOKING EGGS </h3>
+                            <hr>
+                            <br>
+                            <p>
+                                There was a period of time where i had cai png (economy rice, google it if you don't know) for lunch and dinner almost everyday for a few months. Which admittedly was quite sickening.
+                                <br>
+                                <br>
+                                So i decided to experiment with various seasonings and cooking methods to supplement my mundane meals.
+                                Eggs are really fun to cook, there is a versatility in the different ways you can prepare them.
+                                <br>
+                                <br>
+                                <hr>
+                            </p>
+                        </div>
+                        <div class="gallery-container">
+                            <ul class="gallery">
+                                <li class="slide first"><img src="/images/egg.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg7.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg2.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg4.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg5.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg6.jpg" alt="egg" ></li>
+                                <li class="slide"><img src="/images/egg8.jpg" alt="egg" ></li>
+                            </ul>
+                            <a href="#" onclick="right()" class="buttons next"><img src="images/right arrow yellow.gif" width="120px" height="120px"></a>
+                            <a href="#" onclick="left()" class="buttons previous"><img src="images/left arrow yellow.gif" width="120px" height="120px"></a>
+                         </div>
+                        
+                        
+                    </div>
+
+                    <div class="painting gallery-wrap">
+                        <div class="gallery-description">
+                            <hr>
+                            <h3> PAINTING </h3>
+                            <hr>
+                            <br>
+                            <p>
+                                I've always been interested in art and making things, but I chose not to go to art school because I thought I needed to do something else. Art was a tough way to make a living. 
+                                <br>
+                                <br>
+                                Anyways, during the initial Covid-19 circuit breaker period, i got a little bored being cooped up at home.
+                                So i decided to pick up digital painting and just draw stuff to pass the time, and it was quite a splendid distraction from the world.
+                                <br>
+                                <br>
+                                And the best thing about arts? You don't even have to be good at it to enjoy it. Just make whatever makes you happy, how wonderful.
+                                <br>
+                                <br>
+                                <hr>
+                            </p>
+                        </div>
+                        <div class="gallery-container">
+                            <ul class="gallery">
+                                <li><img src="/images/Untitled_Artwork.jpg" alt="arts"></li>
+                                <li><img src="/images/art2-2.jpg" alt="arts"></li>
+                                <li><img src="/images/Yeeee.jpg" alt="arts"></li>
+                                <li><img src="/images/art3.jpg" alt="arts"></li>    
+                                <li><img src="/images/art4.jpg" alt="arts"></li>
+                                <li><img src="/images/art7.jpg" alt="arts"></li>
+                                <li><img src="/images/art5.jpg" alt="arts"></li>
+                                <li><img src="/images/art6.jpg" alt="arts"></li>
+                                <li><img src="/images/art8.jpg" alt="arts"></li>
+                                <li class="pointergag"><img src="/images/cursor.png" alt="arts"></li>
+                            </ul>
+                            <a href="#" onclick="right()" class="buttons next"><img src="images/right arrow yellow.gif" width="120px" height="120px"></a>
+                            <a href="#" onclick="left()" class="buttons previous"><img src="images/left arrow yellow.gif" width="120px" height="120px"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+</body>
+</html>

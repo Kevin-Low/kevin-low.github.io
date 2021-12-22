@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js" integrity="sha384-Ou6JaWXoODZwZ/+BKfGDBaXucZhZRzDGo8gtClNnBUrCyPgKfLfHt12Zx7DjKdFn" crossorigin="anonymous"></script>
+    <script defer src="js/webjs.js"></script>
+    <link href="css/webstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/68917759a6.js" integrity="sha384-BApgallKKvXpdSFctcpnLJtzUvf03LQOorg0OWXJvaFSLLuPwFcvV08N8DSmnNxQ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+</head>
+
+<div class="svg-wrap">
+    <svg viewBox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+      <path id="svg_line" d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6" fill="none" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+    </svg>
+</div>
+
+<body>
+  <header>
+      <div class="header-logo">Kevin Low</div>
+      <nav class="link-svgline">
+          <ul>
+              <li><a href="/Welcome.html" data-bold="Home" id="nav-home" onclick="welcomeScribble()">Home<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+              <li><a href="/About.html" data-bold="About" id="nav-about" onclick="aboutScribble()">About<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+              <li><a href="/Works.html" data-bold="Works"  id="nav-work" onclick="workScribble()">Works<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+              <li><a href="/Contact.html" data-bold="Contact" id="nav-contact" class="is-active" onclick="contactScribble()">Contact<svg class="link-svgline" viewBox="0 0 154 13"><use xlink:href="#svg_line"></use></svg></a></li>
+      </nav>
+  </header>
+  
+  <main id="swup" class="transition-swipe">
+      <div class="page1">
+          <div class="Contact-head">
+              <h1 class="letter-split" aria-label="My Works">
+                  <span><span class="char1" aria-hidden="true" style="animation-delay: 0.4s;">Contact</span></span>
+                  <span><span class="char2" aria-hidden="true" style="animation-delay: 0.5s;">Me</span></span> 
+                  <span><span class="char8" aria-hidden="true" style="animation-delay: 1s;">!</span></span>
+                  <span><span class="char9" aria-hidden="true" style="animation-delay: 1.1s;">!</span></span>
+              </h1>
+              <hr>
+          </div>
+
+            <div class="contact-wrapper">
+
+              <div class="contact-questions">
+                <div class="qns1">
+                  <p>
+                    I'm not a professional but if you still want to work with me then feel free to contact me :)
+                    <br>
+                    Or maybe a coffee? 
+                  </p>
+                </div>
+
+                <div class="qns2">
+                  <p>Currently working on these skills</p> 
+                  <div class="skillz">
+
+                    <a href="#">
+                      <div class="icon html">
+                        <div class="tooltip">This</div>
+                        <span><i class="fab fa-html5"></i></span>
+                      </div>
+                    </a>
+                    
+                    <a href="#">
+                      <div class="icon css">
+                        <div class="tooltip">is</div>
+                        <span><i class="fab fa-css3-alt"></i></span><span>
+                      </div>
+                    </a>
+                    
+                    <a href="#">
+                      <div class="icon js">
+                        <div class="tooltip">kinda</div>
+                        <span><i class="fab fa-js-square"></i></span>
+                      </div>
+                    </a>
+
+                    <a href="#">
+                      <div class="icon java">
+                        <div class="tooltip">fun</div>
+                        <span>
+                          <i class="fab fa-java" 
+                          onmouseover = "this.style = 'background:linear-gradient(to bottom, rgba(248,152,32,1) 0%, rgba(248,152,32,1) 40%, rgba(83,130,161,1) 68%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;'" 
+                          onmouseout  = "this.style = 'background:#f2cc8f;-webkit-background-clip:text;-webkit-text-fill-color:transparent;'">
+                          </i>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                  
+              </div>
+              <div class="contact-details">
+                <form action="https://formsubmit.co/kevinlow37@gmail.com" method="POST" id="contact-form">
+                  <div class="input">
+                    <label class="label" for="name">Name:<label>
+                    <input type="text" class="field" id="name" name="name" required>
+                    <span class="underline"></span>
+                  </div>
+  
+                  <div class="input">
+                    <label class="label" for="email">Email:<label>
+                    <input type="email" class="field" id="email" name="email" required>
+                    <span class="underline filled"></span>
+                  </div>
+  
+                  <div class="input">
+                    <label class="label" for="message">Message:<label>
+                    <textarea class="field fieldarea" id="message" name="message" required></textarea>
+                    <span class="underline"></span>
+                  </div>
+  
+                  <div class="submit">
+                    <button type="submit" id="send" value="Send" disabled>Send</button>
+                  </div>
+                </form>
+              </div>
+
+
+              <div id="socials">
+                <div class="handles">
+          
+                  <a href="https://github.com/Kevinlowlife" target="_blank" rel="noopener noreferrer" style="color: #f2cc8f;">
+                    <div class="icon github">
+                      <div class="tooltip">Github</div>
+                      <span><i class="fab fa-github"></i></span>
+                    </div>
+                  </a>
+          
+                  <a href="https://www.linkedin.com/in/kevin-low-94065a203/" target="_blank" rel="noopener noreferrer" style="color:#f2cc8f;">
+                    <div class="icon linkedin">
+                      <div class="tooltip">LinkedIn</div>
+                      <span><i class='fab fa-linkedin-in'></i></span>
+                    </div>
+                  </a>
+          
+                  <!-- <div class="icon envelope">
+                    <div class="tooltip">Email</div>
+                    <span><i class="fas fa-envelope"></i></i></span>
+                  </div> -->
+          
+                </div>
+              </div>
+
+            </div>
+
+        <div class="thanksmodal">
+          <div class="modal">
+            <h1>Thank You</h1>
+            <p>Your form has been submitted!!</p>
+            <span class="modal-close"><i class="fas fa-times"></i></span>
+          </div>
+        </div>
+      
+      </div>
+
+        
+  </main>
+
+  
+  
+</body>
+</html>
