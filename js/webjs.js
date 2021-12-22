@@ -175,8 +175,8 @@ window.addEventListener("load", init);
 
 
 //contact form stuff//
-function contactform() {
- var sendbtn = document.querySelector('#send');
+
+var sendbtn = document.querySelector('#send');
 var ele = document.getElementsByTagName('input');
 
 
@@ -195,7 +195,7 @@ $(document).ready(function() {
   }
   });
 }); 
-}
+
 
 
 
