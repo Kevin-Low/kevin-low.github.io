@@ -165,9 +165,11 @@ function createObserver() {
 
 
 
+
 function init() {
   createObserver();
   circlescribble();
+  contactform();
 }
 
 document.addEventListener('swup:contentReplaced', init);
@@ -175,12 +177,12 @@ window.addEventListener("load", init);
 
 
 //contact form stuff//
-
+function contactform() {
 var sendbtn = document.querySelector('#send');
 var ele = document.getElementsByTagName('input');
 
 
-$(document).ready(function() {
+$(sendbtn).ready(function() {
   sendbtn.disabled = true;
   $('input').keyup(function() {
     for (i = 0; i <= ele.length; i++) {
@@ -194,7 +196,8 @@ $(document).ready(function() {
       }
   }
   });
-}); 
+});
+}
 
 
 
