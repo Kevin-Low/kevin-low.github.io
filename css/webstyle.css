@@ -112,7 +112,8 @@ ul li a {
     transform: rotate(-10deg);
     font-size: 20px;
     /* font-family: magicalsignature; */
-    font-family: carneys-script;    
+    font-family: carneys-script;
+    z-index: 50;
 }
 
 nav {
