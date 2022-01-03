@@ -442,28 +442,27 @@ nav a::before {
 .contact-wrapper {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin:0;
   animation: appear 2000ms cubic-bezier(1, 0, 0.39, 1);
 }
 
-.contact-wrapper .contact-questions {
+.contact-questions {
   display: flex;
+  position: relative;
   flex-direction: column;
   height: 500px;
   width: 500px;
   padding: 20px;
   text-align: left;
-  top: 4vh;
+  top: 28vh;
   left: 11vw;
   justify-content: space-between;
 }
- .contact-questions p {
+
+.contact-questions p {
+   position: relative ;
    color: #c7ddd1;
    font-size: 18px;
- }
+}
 
 .contact-details {
   height: 500px;
@@ -472,8 +471,9 @@ nav a::before {
   min-width: 400px;
   max-height: 800px;
   padding: 20px;
-  top: 4vh;
-  left: 25vw;
+  position: absolute;
+  top: 25vh;
+  right: 16vw;
   background-color: #4c705f;
   box-shadow: 1px 1px 2px #F2CC8F;
   background-size: cover;
@@ -571,16 +571,11 @@ input {
 /* tooltip*/
 /* tooltip*/
 
-*:focus,
-*:active {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
-}
 
 #socials {
   display: flex;
   position: absolute;
-  top: 92%;
+  bottom: 0;
   left: -4%;
   padding-left: 5vw;
 }
