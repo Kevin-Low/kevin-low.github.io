@@ -834,7 +834,7 @@ input {
 }
 .panel::before {
   content: "Hello & Welcome & ";
-  text-shadow: 1px 1px 10px #333333;
+  text-shadow: 1px 1px 6px #333333;
   left: var(--left);
   font-size: 85px;
   width: max-content;
