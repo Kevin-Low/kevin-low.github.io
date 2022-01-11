@@ -788,3 +788,190 @@ input {
   right: 10px;
   cursor: url(/images/cursor4.png), pointer;
 }
+
+
+/*welcome and hello 3d banner*/
+.page1 {
+  perspective: 300px;
+  perspective-origin: 50% 40%;
+}
+
+.scene {  
+  position: relative;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.screen {
+  position: absolute;
+  border-radius: 10%;
+  width: 320px; height: 320px;
+  transform: translate(-50%, -50%);
+}
+
+.screen-2 {
+  width: 200px; height: 200px;
+  background-image: url(/images/Untitled_Artwork.jpg);
+  box-shadow: 0px 0px 10px #F2CC8F;
+  background-position: center;
+  background-size: cover;
+}
+
+.screen-1 {
+  background-color: #31493cb0;
+}
+
+.banner {
+  position: fixed;
+  display: flex;
+  transform-style: preserve-3d;
+  animation: rotate 15s infinite linear;
+}
+
+@keyframes rotate {
+  to {transform: rotateY(-360deg);}  
+}
+.panel::before {
+  content: "Hello & Welcome & ";
+  text-shadow: 1px 1px 10px #333333;
+  left: var(--left);
+  font-size: 85px;
+  width: max-content;
+  line-height: normal;
+  position: absolute;
+}
+
+
+.panel {
+  position: absolute;
+  width: 30px;
+  height: 120px;
+ /* border: 1px solid white;*/
+  letter-spacing: 10px;
+  /* background-color: rgb(0, 0, 0); */
+  transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(141px);
+  overflow: hidden;
+ /* animation: rotate 6s infinite ease-in-out;
+  */
+}
+.panel:nth-child(1) {
+  --left: 0px;
+  --angle: 0deg;
+}
+.panel:nth-child(2) {
+  --left: -30px;
+  --angle: 12deg;
+}
+.panel:nth-child(3) {
+  --left: -60px;
+  --angle: 24deg;
+}
+.panel:nth-child(4) {
+  --left: -90px;
+  --angle: 36deg;
+}
+.panel:nth-child(5) {
+  --left: -120px;
+  --angle: 48deg;
+}
+.panel:nth-child(6) {
+  --left: -150px;
+  --angle: 60deg;
+}
+.panel:nth-child(7) {
+  --left: -180px;
+  --angle: 72deg;
+}
+.panel:nth-child(8) {
+  --left: -210px;
+  --angle: 84deg;
+}
+.panel:nth-child(9) {
+  --left: -240px;
+  --angle: 96deg;
+}
+.panel:nth-child(10) {
+  --left: -270px;
+  --angle: 108deg;
+}
+.panel:nth-child(11) {
+  --left: -300px;
+  --angle: 120deg;
+}
+.panel:nth-child(12) {
+  --left: -330px;
+  --angle: 132deg;
+}
+.panel:nth-child(13) {
+  --left: -360px;
+  --angle: 144deg;
+}
+.panel:nth-child(14) {
+  --left: -390px;
+  --angle: 156deg;
+}
+.panel:nth-child(15) {
+  --left: -420px;
+  --angle: 168deg;
+}
+.panel:nth-child(16) {
+  --left: -450px;
+  --angle: 180deg;
+}
+.panel:nth-child(17) {
+  --left: -480px;
+  --angle: 192deg;
+}
+.panel:nth-child(18) {
+  --left: -510px;
+  --angle: 204deg;
+}
+.panel:nth-child(19) {
+  --left: -540px;
+  --angle: 216deg;
+}
+.panel:nth-child(20) {
+  --left: -570px;
+  --angle: 228deg;
+}
+.panel:nth-child(21) {
+  --left: -600px;
+  --angle: 240deg;
+}
+.panel:nth-child(22) {
+  --left: -630px;
+  --angle: 252deg;
+}
+.panel:nth-child(23) {
+  --left: -660px;
+  --angle: 264deg;
+}
+.panel:nth-child(24) {
+  --left: -690px;
+  --angle: 276deg;
+}
+.panel:nth-child(25) {
+  --left: -720px;
+  --angle: 288deg;
+}
+.panel:nth-child(26) {
+  --left: -750px;
+  --angle: 300deg;
+}
+.panel:nth-child(27) {
+  --left: -780px;
+  --angle: 312deg;
+}
+.panel:nth-child(28) {
+  --left: -810px;
+  --angle: 324deg;
+}
+.panel:nth-child(29) {
+  --left: -840px;
+  --angle: 336deg;
+}
+.panel:nth-child(30) {
+  --left: -870px;
+  --angle: 348deg;
+}
