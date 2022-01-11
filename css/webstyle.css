@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap');
 
-@import url('http://fonts.cdnfonts.com/css/lissain-didone');
-@import url('http://fonts.cdnfonts.com/css/maxxi-serif');
-@import url('http://fonts.cdnfonts.com/css/covington-sc-rev');
-@import url('http://fonts.cdnfonts.com/css/exclusive');
-@import url('http://fonts.cdnfonts.com/css/made-sunflower');
 
 @font-face {font-family: appears; src: url(/fonts/AppearsDemoRegular.otf) format("opentype");}
 @font-face {font-family: agoka; src: url(/fonts/Agoka-FreePersonalUse.otf) format("opentype");}
