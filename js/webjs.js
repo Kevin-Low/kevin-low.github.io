@@ -163,14 +163,23 @@ function createObserver() {
 }
 
 
+function flowertimer() {
+  const myTimeout = setTimeout(floweropen, 5000);
+}
 
+function floweropen() {
+  var loader = document.querySelector('.loader-wrapper');
+  loader.classList.add("loaded");
+}
 
 
 function init() {
   createObserver();
   circlescribble();
   contactform();
+  flowertimer();
 }
+
 
 document.addEventListener('swup:contentReplaced', init);
 window.addEventListener("load", init);
